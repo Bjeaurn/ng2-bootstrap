@@ -7,7 +7,7 @@ Contains:
 - Webpack for transpiling from Typescript to JS, packing and building.
 
 # Getting started
-Run `git clone https://github.com/Bjeaurn/angular2-boilerplate <desired folder>` from the commandline.
+Run `git clone https://github.com/Bjeaurn/Boilerplate-angular2 <desired folder>` from the commandline.
 
 Run `npm install` from the commandline.
 
