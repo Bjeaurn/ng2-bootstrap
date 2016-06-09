@@ -8,6 +8,7 @@ Contains:
 
 # Getting started
 Run `git clone https://github.com/Bjeaurn/angular2-boilerplate <desired folder>` from the commandline.
+
 Run `npm install` from the commandline.
 
 You're ready to go!
