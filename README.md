@@ -1,2 +1,1 @@
-# filerijden
-:-). 
+# Ng2-boilerplate
