@@ -31,5 +31,3 @@ Run `npm run build` from the commandline
 
 ## Deployment
 Take the `/dist/` from the folder after running the build. Deploy this to a server and host of your liking. 
-
-
