@@ -4,6 +4,6 @@ logs
 npm-debug.log*
 
 # Dependency directories
-/node_modules/
-/typings/
+node_modules/
+typings/
 .DS_Store
