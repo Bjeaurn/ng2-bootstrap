@@ -5,15 +5,13 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent}   from './app.component';
 import {MenuComponent} from './menu/menu.component';
 import {PageNotFoundComponent} from './errors/pagenotfound.component';
+import {routing} from './app.routing';
 
 @NgModule({
   imports: [
       BrowserModule,
       FormsModule,
-      RouterModule.forRoot([
-      { path: '', component: AppComponent },
-      { path: '**', component: PageNotFoundComponent }
-    ])
+      routing
   ],
   declarations: [ 
     AppComponent, 

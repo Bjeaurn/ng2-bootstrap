@@ -8,18 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var MenuComponent = (function () {
-    function MenuComponent() {
+var core_1 = require("@angular/core");
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
     }
-    MenuComponent = __decorate([
-        core_1.Component({
-            selector: 'menu',
-            templateUrl: 'app/menu.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], MenuComponent);
-    return MenuComponent;
+    return PageNotFoundComponent;
 }());
-exports.MenuComponent = MenuComponent;
-//# sourceMappingURL=menu.component.js.map
+PageNotFoundComponent = __decorate([
+    core_1.Component({
+        template: '<h1 class="text-center">404: Page Not Found.</h1>'
+    }),
+    __metadata("design:paramtypes", [])
+], PageNotFoundComponent);
+exports.PageNotFoundComponent = PageNotFoundComponent;
+//# sourceMappingURL=pagenotfound.component.js.map
