@@ -1,17 +1,34 @@
-import {inject, TestBed} from '@angular/core/testing'
-import {AppComponent} from './app.component';
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
+import { ComponentFixture, TestBed, async } from "@angular/core/testing";
+import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from "@angular/platform-browser-dynamic/testing";
 
-describe('App', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [
-        AppComponent
-      ]
+import { AppComponent } from "./app.component";
+
+describe("AppComponent", () => {
+
+    TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
+
+    let component: ComponentFixture<AppComponent>;
+
+    beforeEach(async(() => {
+
+        return TestBed
+            .configureTestingModule({
+                declarations: [AppComponent]
+            })
+            .overrideComponent(AppComponent, {
+                set: {
+                    template: "<div>foo</div>"
+                }
+            })
+            .compileComponents()
+            .then(() => {
+                component = TestBed.createComponent(AppComponent);
+            });
+    }));
+
+    it("should work", () => {
+        expect(component).not.toBeUndefined();
     });
-  });
-
-  it ('should work', inject([AppComponent], (app: AppComponent) => {
-    // Add real test here
-    expect(2).toBe(2);
-  }));
-});
+})
