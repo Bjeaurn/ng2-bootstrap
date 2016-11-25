@@ -15,12 +15,20 @@ module.exports = function(config) {
         { pattern: "node_modules/zone.js/dist/async-test.js" },
         { pattern: "node_modules/zone.js/dist/fake-async-test.js" },
 
-        { pattern: "app/**/*.ts" },
+        { pattern: "app/app.*.ts" },
+        { pattern: "app/app.*.html" },
+        { pattern: "app/errors/**/*.ts" },
+        { pattern: "app/menu/**/*.ts" },
     ],
-
+    proxies: {
+      "/app/": "/base/app/"
+    },
     preprocessors: {
         "app/**/*.ts": ["karma-typescript"]
     },
+    exclude: [
+      'app/main.ts'
+    ],
 
     reporters: ["progress", "karma-typescript"],
 
